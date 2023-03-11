@@ -1,0 +1,8 @@
+@mixin dropdown {
+    &::after {
+        content: "\f107";
+        font: var(--fa-font-solid);
+        color: $navText;
+        font-size: .6rem;
+    }
+}
