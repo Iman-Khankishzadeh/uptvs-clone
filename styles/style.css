@@ -32,10 +32,21 @@ a {
   color: #fff;
 }
 
+header {
+  background-color: #101014;
+  padding-bottom: 1.5rem;
+}
+
+main {
+  background: #1C1C22;
+  width: 90%;
+  padding: 3rem 0;
+}
+
 .yellow-badge {
   background-color: #f6b828;
   font-size: .65rem;
-  padding: .4rem .3rem;
+  padding: .3rem;
   border-radius: .6rem;
 }
 
@@ -268,6 +279,76 @@ a {
   cursor: pointer;
 }
 
+.search-by-category {
+  background: #23232b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  width: 90%;
+  border-radius: .3rem;
+}
+
+.new-iranian-series-header a:nth-child(2) {
+  float: left;
+  color: #6898F8;
+  font-size: .7rem;
+}
+
+.new-iranian-series-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.new-iranian-series-title {
+  padding: 2rem 0;
+}
+
+.new-iranian-series-item h5 {
+  color: #e8eaf0;
+  font-size: .8rem;
+  padding: .7rem 0;
+}
+
+.new-iranian-series-item p {
+  color: #c6c9cc;
+  font-size: .7rem;
+}
+
+.new-iranian-series-item .new-iranian-series-item-image {
+  position: relative;
+}
+
+.new-iranian-series-item .new-iranian-series-item-image section {
+  position: absolute;
+  bottom: 1rem;
+  left: .4rem;
+}
+
+.new-iranian-series-item .new-iranian-series-item-image .new-iranian-series-item-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 2%;
+  background: linear-gradient(to bottom, transparent 0%, transparent 100px, #101014 100%);
+  cursor: pointer;
+}
+
+.new-iranian-series-item .new-iranian-series-item-image:hover .new-iranian-series-item-overlay {
+  display: block;
+}
+
 @media screen and (max-width: 1298px) {
   .menu-list {
     display: none;
@@ -305,6 +386,9 @@ a {
   .trends-container {
     -ms-grid-columns: (auto)[2];
         grid-template-columns: repeat(2, auto);
+  }
+  .search-by-category {
+    display: none;
   }
 }
 

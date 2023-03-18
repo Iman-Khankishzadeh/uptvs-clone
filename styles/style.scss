@@ -34,10 +34,21 @@ a {
     color: $whiteText;
 }
 
+header {
+    background-color: $trendsBannerColor;
+    padding-bottom: 1.5rem;
+}
+
+main {
+    background: $primaryColor;
+    width: 90%;
+    padding: 3rem 0;
+}
+
 .yellow-badge {
     background-color: $yellow;
     font-size: .65rem;
-    padding: .4rem .3rem;
+    padding: .3rem;
     border-radius: .6rem;
 }
 
@@ -241,6 +252,77 @@ a {
     }
 }
 
+.search-by-category {
+    background: #23232b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 90%;
+    border-radius: .3rem;
+}
+
+.new-iranian-series-header {
+    // padding-bottom: 1.5rem;
+
+    a:nth-child(2) {
+        float: left;
+        color: $blueBtn;
+        font-size: .7rem;
+    }
+}
+
+.new-iranian-series-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new-iranian-series-title {
+    padding: 2rem 0;
+}
+
+.new-iranian-series-item {
+    h5 {
+        color: #e8eaf0;
+        font-size: .8rem;
+        padding: .7rem 0;
+    }
+
+    p {
+        color: #c6c9cc;
+        font-size: .7rem;
+    }
+
+    .new-iranian-series-item-image {
+        position: relative;
+
+        section {
+            position: absolute;
+            bottom: 1rem;
+            left: .4rem;
+        }
+
+        .new-iranian-series-item-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 2%;
+            background: linear-gradient(to bottom, transparent 0%, transparent 100px, #101014 100%);
+            cursor: pointer;
+        }
+
+
+        &:hover {
+            .new-iranian-series-item-overlay {
+                display: block;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width : 1298px) {
     .menu-list {
         display: none;
@@ -280,6 +362,10 @@ a {
 
     .trends-container {
         grid-template-columns: repeat(2, auto);
+    }
+
+    .search-by-category {
+        display: none;
     }
 }
 
