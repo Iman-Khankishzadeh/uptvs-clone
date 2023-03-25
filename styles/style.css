@@ -64,7 +64,7 @@ main {
   font-size: .9rem;
   background: transparent;
   border: 1px solid #6898F8;
-  padding: .6rem 1rem;
+  padding: .9rem 1.5rem;
   border-radius: .2rem;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -347,6 +347,74 @@ main {
 
 .new-iranian-series-item .new-iranian-series-item-image:hover .new-iranian-series-item-overlay {
   display: block;
+}
+
+.main-section {
+  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-section .newest-movies {
+  width: 75%;
+}
+
+.main-section .newest-movies-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #23232B;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  font-size: .9rem;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details .title {
+  color: #e8eaf0;
+  margin: 0;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details span {
+  margin: 0;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details p {
+  color: #bbc1c6;
+  margin: 0;
+  font-size: .8rem;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details .movie-caption {
+  background: #1B1B21;
+  padding: 1rem;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details button {
+  margin-right: 16rem;
+}
+
+.main-section .newest-movies-item .newest-movies-item-details .label {
+  color: #6898F8;
+}
+
+.main-section .sidebar {
+  width: calc(100% - 75%);
+  margin-right: 1rem;
+  background: red;
 }
 
 @media screen and (max-width: 1298px) {
