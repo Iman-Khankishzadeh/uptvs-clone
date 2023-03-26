@@ -76,6 +76,13 @@ main {
   color: #fff;
 }
 
+.white-transparent-badge {
+  border: 1px solid #fff;
+  border-radius: .5rem;
+  font-size: .7rem;
+  padding: .3rem;
+}
+
 .search-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,6 +363,28 @@ main {
   display: flex;
 }
 
+.main-section .pagination {
+  background-color: #23232B;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-section .pagination span {
+  color: #baaaaa;
+  background: #1c1c22;
+  border-radius: .3rem;
+  padding: .7rem 1rem;
+  cursor: pointer;
+}
+
+.main-section .pagination span:hover {
+  background-color: #6898F8;
+}
+
+.main-section .pagination .active {
+  background-color: #6898F8;
+}
+
 .main-section .newest-movies {
   width: 75%;
 }
@@ -404,7 +433,7 @@ main {
 }
 
 .main-section .newest-movies-item .newest-movies-item-details button {
-  margin-right: 16rem;
+  margin-right: 30%;
 }
 
 .main-section .newest-movies-item .newest-movies-item-details .label {
@@ -414,7 +443,99 @@ main {
 .main-section .sidebar {
   width: calc(100% - 75%);
   margin-right: 1rem;
-  background: red;
+}
+
+.main-section .sidebar .sidebar-updated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 5px solid #24242C;
+  border-radius: .5rem;
+  background: #32323D;
+  color: #9ea1a6;
+  padding: 1.2rem;
+}
+
+.main-section .sidebar .extra-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-section .sidebar .extra-option button {
+  background: #1c1c22;
+  color: #8e949a;
+  border: 0;
+  border-radius: .3rem;
+  padding: 1rem 5rem;
+  font-weight: bold;
+  margin: .8rem 0;
+  cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.main-section .sidebar .extra-option button:hover {
+  background-color: #292931;
+}
+
+.main-section .sidebar .series-update-item {
+  position: relative;
+  margin: .5rem 0;
+}
+
+.main-section .sidebar .series-update-item img {
+  width: 100%;
+  border-radius: .4rem;
+}
+
+.main-section .sidebar .series-update-item .series-update-item-caption {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: .4rem;
+  padding: .5rem .6rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: .9rem;
+}
+
+.main-section .sidebar .series-update-item .series-update-item-caption span {
+  margin: 0;
+}
+
+.main-section .sidebar .series-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem .3rem;
+}
+
+.main-section .sidebar .series-title h3,
+.main-section .sidebar .series-title a {
+  font-size: 1rem;
+  margin: 0;
+  color: #c6c9cc;
 }
 
 @media screen and (max-width: 1298px) {
@@ -458,6 +579,20 @@ main {
   .search-by-category {
     display: none;
   }
+  .newest-movies {
+    width: 100% !important;
+  }
+  .newest-movies-item-details button {
+    margin-top: 1rem;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+  .main-section {
+    display: block !important;
+  }
+  .sidebar {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -490,6 +625,20 @@ main {
         grid-template-columns: repeat(4, auto);
     overflow: scroll;
     gap: 1rem;
+  }
+  .newest-movies img {
+    width: 50% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .newest-movies .newest-movies-item-details {
+    width: 100% !important;
+  }
+  .newest-movies .newest-movies-item-details .movie-caption {
+    display: none;
+  }
+  .newest-movies .newest-movies-item-details button {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
