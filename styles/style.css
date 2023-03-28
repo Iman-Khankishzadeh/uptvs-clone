@@ -433,7 +433,7 @@ main {
 }
 
 .main-section .newest-movies-item .newest-movies-item-details button {
-  margin-right: 30%;
+  margin-right: 18%;
 }
 
 .main-section .newest-movies-item .newest-movies-item-details .label {
@@ -460,6 +460,7 @@ main {
   background: #32323D;
   color: #9ea1a6;
   padding: 1.2rem;
+  margin: 1rem 0;
 }
 
 .main-section .sidebar .extra-option {
@@ -536,6 +537,186 @@ main {
   font-size: 1rem;
   margin: 0;
   color: #c6c9cc;
+}
+
+footer {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-requirement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #23232B;
+  width: 70%;
+}
+
+footer .footer-requirement .footer-requirement-section-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: .5rem 0;
+  margin-top: 1rem;
+}
+
+footer .footer-requirement .footer-requirement-section-icon i {
+  margin: 0;
+}
+
+footer .footer-requirement .yellow-icon {
+  background-color: #463C25;
+  color: #9f9696;
+  border-radius: .3rem;
+  font-size: 1.5rem;
+  color: #ffc107;
+}
+
+footer .footer-requirement .blue-icon {
+  background-color: #2D3348;
+  color: #9f9696;
+  border-radius: .3rem;
+  font-size: 1.5rem;
+  color: #6898f8;
+}
+
+footer .footer-requirement .green-icon {
+  background-color: #323E31;
+  color: #9f9696;
+  border-radius: .3rem;
+  font-size: 1.5rem;
+  color: #89d64f;
+}
+
+footer .footer-requirement .footer-requirement-section-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #beb6b6;
+  margin: 1rem 0;
+}
+
+footer .footer-social-media {
+  width: calc(100% - 70%);
+  margin-right: 1rem;
+}
+
+footer .footer-social-media .footer-social-media-instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: linear-gradient(145deg, #FA9F6F, #FA697C);
+  -webkit-box-shadow: 0 3px 20px rgba(250, 123, 119, 0.3);
+          box-shadow: 0 3px 20px rgba(250, 123, 119, 0.3);
+  padding: 1rem;
+  border-radius: .3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+footer .footer-social-media .footer-social-media-instagram span {
+  margin: 0;
+}
+
+footer .footer-social-media .footer-social-media-telegram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: linear-gradient(145deg, #96D5F5, #5EBAE8);
+  -webkit-box-shadow: 0 3px 20px rgba(142, 209, 243, 0.35);
+          box-shadow: 0 3px 20px rgba(142, 209, 243, 0.35);
+  padding: 1rem;
+  border-radius: .3rem;
+  color: #fff;
+}
+
+footer .footer-social-media .footer-social-media-telegram span {
+  margin: 0;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  margin: 2.5rem auto;
+}
+
+.footer-bottom .footer-bottom-list-item {
+  display: inline-block;
+  padding: .6rem;
+  font-size: .8rem;
+}
+
+.footer-bottom .footer-bottom-list-item .footer-bottom-list-item-text {
+  color: #c6c9cc;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer-bottom .footer-bottom-list-item .footer-bottom-list-item-text:hover {
+  color: #fff;
+}
+
+.footer-bottom .footer-bottom-uptvs-application {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #89d64f;
+}
+
+.footer-bottom .footer-bottom-uptvs-application .donwload-btn-uptvs {
+  color: #89d64f;
+  background: #323E31;
+  border: none;
+  padding: .7rem;
+  margin-right: 1.5rem;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background: #9ba1a6;
+}
+
+.copyright {
+  width: 90%;
+  font-size: .9rem;
+  margin: 2rem auto;
+  color: #9ba1a6;
 }
 
 @media screen and (max-width: 1298px) {
@@ -626,6 +807,9 @@ main {
     overflow: scroll;
     gap: 1rem;
   }
+  .sidebar {
+    margin-right: 0 !important;
+  }
   .newest-movies img {
     width: 50% !important;
     -o-object-fit: cover;
@@ -639,6 +823,17 @@ main {
   }
   .newest-movies .newest-movies-item-details button {
     display: none;
+  }
+  footer {
+    display: block !important;
+  }
+  footer .footer-requirement {
+    display: block !important;
+    width: 100% !important;
+  }
+  footer .footer-social-media {
+    width: 100% !important;
+    margin: 1rem auto;
   }
 }
 /*# sourceMappingURL=style.css.map */

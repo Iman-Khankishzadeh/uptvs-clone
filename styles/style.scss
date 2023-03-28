@@ -394,8 +394,7 @@ main {
             }
 
             button {
-                margin-right: 30%;
-                // margin-right: auto;
+                margin-right: 18%;
             }
 
             .label {
@@ -417,6 +416,7 @@ main {
             background: #32323D;
             color: #9ea1a6;
             padding: 1.2rem;
+            margin: 1rem 0;
         }
 
         .extra-option {
@@ -484,6 +484,119 @@ main {
 
         }
     }
+}
+
+footer {
+    width: 90%;
+    display: flex;
+    // justify-content: space-between;
+
+
+    .footer-requirement {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #23232B;
+        width: 70%;
+
+
+        .footer-requirement-section-icon {
+            display: flex;
+            justify-content: center;
+            padding: .5rem 0;
+            margin-top: 1rem;
+
+            i {
+                margin: 0;
+            }
+        }
+
+        .yellow-icon {
+            @include bg-icon(#463C25, #ffc107);
+        }
+
+        .blue-icon {
+            @include bg-icon(#2D3348, #6898f8);
+        }
+
+        .green-icon {
+            @include bg-icon(#323E31, #89d64f);
+        }
+
+        .footer-requirement-section-caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: rgb(190, 182, 182);
+            margin: 1rem 0;
+        }
+    }
+
+    .footer-social-media {
+        width: calc(100% - 70%);
+        margin-right: 1rem;
+
+        .footer-social-media-instagram {
+            @include socialMedia(linear-gradient(145deg, #FA9F6F, #FA697C),
+                0 3px 20px rgba(250, 123, 119, .3), $whiteText);
+            margin-bottom: 1rem;
+        }
+
+        .footer-social-media-telegram {
+            @include socialMedia(linear-gradient(145deg, #96D5F5, #5EBAE8),
+                0 3px 20px rgba(142, 209, 243, .35), $whiteText);
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2.5rem auto;
+
+    .footer-bottom-list-item {
+        display: inline-block;
+        padding: .6rem;
+        font-size: .8rem;
+
+        .footer-bottom-list-item-text {
+            color: #c6c9cc;
+            transition: all .3s;
+
+            &:hover {
+                color: $whiteText;
+            }
+        }
+    }
+
+    .footer-bottom-uptvs-application {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #89d64f;
+
+        .donwload-btn-uptvs {
+            color: #89d64f;
+            background: #323E31;
+            border: none;
+            padding: .7rem;
+            margin-right: 1.5rem;
+        }
+    }
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background: #9ba1a6;
+}
+
+.copyright {
+    width: 90%;
+    font-size: .9rem;
+    margin: 2rem auto;
+    color: #9ba1a6;
 }
 
 
@@ -586,6 +699,10 @@ main {
         gap: 1rem;
     }
 
+    .sidebar {
+        margin-right: 0 !important;
+    }
+
     .newest-movies {
         img {
             width: 50% !important;
@@ -603,6 +720,20 @@ main {
             button {
                 display: none;
             }
+        }
+    }
+
+    footer {
+        display: block !important;
+
+        .footer-requirement {
+            display: block !important;
+            width: 100% !important;
+        }
+
+        .footer-social-media {
+            width: 100% !important;
+            margin: 1rem auto;
         }
     }
 }
